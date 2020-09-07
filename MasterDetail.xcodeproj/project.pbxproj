@@ -14,6 +14,10 @@
 		545BDFF52505374200B1475A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545BDFF32505374200B1475A /* Main.storyboard */; };
 		545BDFF72505374400B1475A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545BDFF62505374400B1475A /* Assets.xcassets */; };
 		545BDFFA2505374400B1475A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545BDFF82505374400B1475A /* LaunchScreen.storyboard */; };
+		545BE0022505395600B1475A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545BE0012505395600B1475A /* Model.swift */; };
+		545BE00425053B1100B1475A /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545BE00325053B1100B1475A /* Presenter.swift */; };
+		545BE0062505515600B1475A /* MasterViewController-UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545BE0052505515600B1475A /* MasterViewController-UITableViewDataSource.swift */; };
+		545BE00A2505527C00B1475A /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545BE0092505527C00B1475A /* Binding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		545BDFF62505374400B1475A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		545BDFF92505374400B1475A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		545BDFFB2505374400B1475A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		545BE0012505395600B1475A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		545BE00325053B1100B1475A /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		545BE0052505515600B1475A /* MasterViewController-UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MasterViewController-UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		545BE0092505527C00B1475A /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,8 @@
 		545BDFEA2505374200B1475A /* MasterDetail */ = {
 			isa = PBXGroup;
 			children = (
+				545BE0082505526200B1475A /* Model */,
+				545BE0072505524C00B1475A /* Presenter */,
 				545BDFEB2505374200B1475A /* AppDelegate.swift */,
 				545BDFED2505374200B1475A /* SceneDelegate.swift */,
 				545BDFEF2505374200B1475A /* MasterViewController.swift */,
@@ -66,8 +76,26 @@
 				545BDFF62505374400B1475A /* Assets.xcassets */,
 				545BDFF82505374400B1475A /* LaunchScreen.storyboard */,
 				545BDFFB2505374400B1475A /* Info.plist */,
+				545BE0052505515600B1475A /* MasterViewController-UITableViewDataSource.swift */,
+				545BE0092505527C00B1475A /* Binding.swift */,
 			);
 			path = MasterDetail;
+			sourceTree = "<group>";
+		};
+		545BE0072505524C00B1475A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				545BE00325053B1100B1475A /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		545BE0082505526200B1475A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				545BE0012505395600B1475A /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545BE00425053B1100B1475A /* Presenter.swift in Sources */,
+				545BE0022505395600B1475A /* Model.swift in Sources */,
 				545BDFEC2505374200B1475A /* AppDelegate.swift in Sources */,
+				545BE00A2505527C00B1475A /* Binding.swift in Sources */,
+				545BE0062505515600B1475A /* MasterViewController-UITableViewDataSource.swift in Sources */,
 				545BDFEE2505374200B1475A /* SceneDelegate.swift in Sources */,
 				545BDFF02505374200B1475A /* MasterViewController.swift in Sources */,
 				545BDFF22505374200B1475A /* DetailViewController.swift in Sources */,
